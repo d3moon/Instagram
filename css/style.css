@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,body{height: 100%; background-color: rgb(245, 245, 245);}
+
+.clear{clear: both;}
+
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+header{
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+header > .container{display: flex;}
+
+.logo-header img{
+  max-width: 150px;
+  width: 100%;
+}
+ 
+.logo-header{
+  width: 30%;
+}
+
+.search{
+  width: 40%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.search-box{
+  display: inline-block;
+  position: relative;
+}
+
+.search-box input{
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 5px 15px;
+  width: 215px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 2px;
+}
+
+.search-box input:focus{outline: 0;}
+
+
+
+.search-box i{
+  position: absolute;
+  top: 9px;
+  left:55px;
+  opacity: 0.3;
+  font-size: 10px;
+}
+
+.notifications-icons{
+  width: 30%;
+  text-align: right;
+  padding-top: 15px;
+}
+
+.notifications-icons a{
+  text-decoration: none;
+  color: black;
+  font-size: 27px;
+  margin-right: 20px;
+ }
+
+ /*******/
+
+section.perfil > .container{ 
+  display: flex;
+  margin-top: 20px;
+ }
+
+.img-perfil-wraper{
+  background-size: 100% 100%;
+  width: 40%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat:no-repeat;
+  background-image: url('/images/perfil.jpg');
+ }
+
+.text-perfil{
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+.nome-perfil span{
+  font-size: 23px;
+  font-weight: 300;
+}
+
+ 
+ 
+.nome-perfil a{
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0 3px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nome-perfil a.points{
+  border: 0;
+  font-size:35px;
+  font-weight: bold;
+}
+
+.nome-perfil i#account{padding: 20px;}
+
+.nome-perfil i#arrow{padding: 5px;}
+
+/**/
+
+.info p{
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+
+.description{margin-top: 15px;}
+
+.description p{
+   text-align: justify;
+   margin-left: 120px;
+}
+
+
+/**/
+
+.story {
+  margin-top: 70px;
+  width: 100%;
+ }
+
+ 
+section.story .single{
+  width: 20%;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+section.story .single img{
+  background-position: center;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+
+}
+
+.single p{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.single p > a{
+  text-decoration: none;
+  color: black;
+}
+
+/**/
+
+section.feed{padding: 60px 0;}
+
+.line-feed{
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.mark{
+  display: none;
+  position: absolute;
+  width: 110px;
+  height: 1px;
+  background-color: black;
+  top: -19px;
+}
+
+.name{
+  position: relative;
+  margin: 18px 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.name p{
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.name p >i {padding-right: 5px;}
+
+/**/
+
+section#public .public-single{
+  float: left;
+  width: 33.3%;
+  padding-top: 33.3%;
+  background-size: contain;
+  background-image: url('/images/public.jpg');
+  border: 14px solid rgb(245, 245, 245);
+}
+
+/**/
+
+#igtv{
+  display: none;
+}
+
+
+#igtv .public-single{
+  background-image: url('/images/igtv.jpg');
+  float: left;
+  width: 33.3%;
+  padding-top: 33.3%;
+  background-size: contain;
+  border: 14px solid rgb(245, 245, 245)
+}
+
+ 
+
+
+ @media screen and (max-width: 868px){
+   .search-box{display: none;}
+
+   .notifications-icons{
+     width: 70%;
+     padding-top: 6px;
+   }
+ }
+
+ 
